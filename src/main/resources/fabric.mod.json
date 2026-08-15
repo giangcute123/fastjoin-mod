@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "fastjoin",
+  "version": "${version}",
+  "name": "FastJoin",
+  "description": "Tối ưu tốc độ kết nối client khi vào server (giảm độ trễ mạng, tắt Nagle's algorithm).",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fastjoin/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.fastjoin.FastJoinClient"
+    ]
+  },
+  "mixins": [
+    "fastjoin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "26.2",
+    "java": ">=25"
+  }
+}
